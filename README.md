@@ -1,0 +1,1 @@
+This repo is for learning design archiecture for general programming
