@@ -1,0 +1,26 @@
+classDiagram
+    Library *-- Book
+    Library *-- User
+    Book *-- Loan
+    User *-- Loan
+    class Library {
+        -add_book(in title: str, in author: str, in state: bool) Book
+        -register_user(in name: str, in email: str) User
+        +create_loan(in book: Book, in user: User, in start_date: str, in end_date: str) Loan
+    }
+    class User {
+        -str name
+        -str email
+    }
+    class Book {
+        -str title
+        -str author
+        -bool state
+        -mark_as_unavailable()
+        -mark_as_available()
+    }
+    class Loan{
+        -str start_date
+        -str end_data
+        -close_loan()
+    }
