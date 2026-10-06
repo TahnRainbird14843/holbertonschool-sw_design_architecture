@@ -66,8 +66,6 @@ def main() -> None:
     cup3 = CaramelDecorator(MilkDecorator(SugarDecorator(Coffee())))
     print(cup3.description(), cup3.cost())
 
-    # TODO: build CaramelDecorator(MilkDecorator(SugarDecorator(Coffee()))) and print it
-
 
 if __name__ == "__main__":
     main()
